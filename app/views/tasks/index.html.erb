@@ -1,0 +1,11 @@
+<div class="interface">
+  <h1>Welcome to the Task Manger</h1>
+<ul>
+<% @tasks.each do |task| %>
+  <li class="btn btn-warning"><%= link_to task.title, task_path(task) %></li>
+  <li ><%= task.details %></li>
+<% end %>
+</ul>
+
+<%= link_to "Add a new task", new_path %>
+</div>

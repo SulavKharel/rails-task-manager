@@ -1,0 +1,24 @@
+// Place all the styles related to the tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.interface{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border: 1px solid;
+  opacity: 0.7;
+  text-decoration: none
+}
+
+.interface h1{
+  font-weight: bolder;
+  color: #390040;
+  padding: 20px
+}
+
+.interface:hover{
+  opacity: 1;
+}
