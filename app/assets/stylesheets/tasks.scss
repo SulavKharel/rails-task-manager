@@ -9,8 +9,19 @@
   align-items: center;
   padding: 30px;
   border: 1px solid;
-  opacity: 0.7;
+  opacity: 0.8;
   text-decoration: none
+}
+.text{
+  text-decoration: none;
+  border-bottom: 1px solid rgb(200,200,200);
+  box-shadow: 2px 2px rgb(190, 190, 190);
+  color:#533a7b;
+}
+.text:hover{
+  text-decoration: none;
+  font-size: 40px;
+
 }
 
 .interface h1{
@@ -21,4 +32,8 @@
 
 .interface:hover{
   opacity: 1;
+}
+
+.wrapper{
+  background-color: rgb(245,245,245)
 }

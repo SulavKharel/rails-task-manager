@@ -1,11 +1,14 @@
 <div class="interface">
   <h1>Welcome to the Task Manger</h1>
-<ul>
 <% @tasks.each do |task| %>
-  <li class="btn btn-warning"><%= link_to task.title, task_path(task) %></li>
-  <li ><%= task.details %></li>
+  <h3>
+    <%= link_to task.title, task_path(task) , class: "text"%>
+    <%= link_to task_path(task), method: :delete do %>
+          <i class="fas fa-trash"></i>
+          <i class="fas fa-trash"></i>
+    <% end %>
+  </h3>
 <% end %>
-</ul>
+  <%= link_to "Add a new task", new_path , class: "btn btn-primary" %>
 
-<%= link_to "Add a new task", new_path %>
 </div>

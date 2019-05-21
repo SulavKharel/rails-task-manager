@@ -1,2 +1,4 @@
 <h2><%= @task.title %></h2>
 <p><%= @task.details %></p>
+<%= link_to "home", tasks_path %>
+<%= link_to "Update a Task", edit_task_path(@task) , class: "btn btn-primary" %>
